@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012ACC16267721A70097CF8B /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC15267721A70097CF8B /* BackgroundImageView.swift */; };
+		012ACC1A267721C10097CF8B /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC19267721C10097CF8B /* NewTaskItemView.swift */; };
+		012ACC1D267721DB0097CF8B /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC1C267721DB0097CF8B /* BlankView.swift */; };
+		012ACC20267721F40097CF8B /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC1F267721F40097CF8B /* ListRowItemView.swift */; };
+		012ACC24267722210097CF8B /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC23267722210097CF8B /* CheckboxStyle.swift */; };
+		012ACC28267722510097CF8B /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC27267722510097CF8B /* SoundPlayer.swift */; };
+		012ACC2C267722810097CF8B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012ACC2B267722810097CF8B /* SwiftUIView.swift */; };
 		01AAA8F7264CE49000E97629 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAA8F6264CE49000E97629 /* DevoteApp.swift */; };
 		01AAA8F9264CE49000E97629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AAA8F8264CE49000E97629 /* ContentView.swift */; };
 		01AAA8FB264CE49100E97629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01AAA8FA264CE49100E97629 /* Assets.xcassets */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012ACC15267721A70097CF8B /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		012ACC19267721C10097CF8B /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		012ACC1C267721DB0097CF8B /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		012ACC1F267721F40097CF8B /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		012ACC23267722210097CF8B /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		012ACC27267722510097CF8B /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		012ACC2B267722810097CF8B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		01AAA8F3264CE49000E97629 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AAA8F6264CE49000E97629 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		01AAA8F8264CE49000E97629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012ACC22267722080097CF8B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				012ACC23267722210097CF8B /* CheckboxStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		012ACC2A267722650097CF8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				012ACC2B267722810097CF8B /* SwiftUIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		01AAA8EA264CE49000E97629 = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +94,11 @@
 		01AAA8F5264CE49000E97629 /* Devote */ = {
 			isa = PBXGroup;
 			children = (
+				012ACC2A267722650097CF8B /* Extension */,
+				012ACC22267722080097CF8B /* Style */,
 				01AAA8F6264CE49000E97629 /* DevoteApp.swift */,
 				01AAA918264CE61A00E97629 /* View */,
 				01AAA917264CE5E200E97629 /* Model */,
-				01AAA916264CE5C000E97629 /* Devote */,
-				01AAA915264CE5B600E97629 /* Style */,
-				01AAA914264CE5B000E97629 /* Extension */,
 				01AAA913264CE5A700E97629 /* Utility */,
 				01AAA912264CE58A00E97629 /* Sound */,
 				01AAA8FA264CE49100E97629 /* Assets.xcassets */,
@@ -101,29 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				01AAA920264CEEBE00E97629 /* Constant.swift */,
+				012ACC27267722510097CF8B /* SoundPlayer.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		01AAA914264CE5B000E97629 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		01AAA915264CE5B600E97629 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		01AAA916264CE5C000E97629 /* Devote */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Devote;
 			sourceTree = "<group>";
 		};
 		01AAA917264CE5E200E97629 /* Model */ = {
@@ -139,6 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				01AAA8F8264CE49000E97629 /* ContentView.swift */,
+				012ACC15267721A70097CF8B /* BackgroundImageView.swift */,
+				012ACC19267721C10097CF8B /* NewTaskItemView.swift */,
+				012ACC1C267721DB0097CF8B /* BlankView.swift */,
+				012ACC1F267721F40097CF8B /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,10 +228,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012ACC20267721F40097CF8B /* ListRowItemView.swift in Sources */,
+				012ACC1A267721C10097CF8B /* NewTaskItemView.swift in Sources */,
+				012ACC2C267722810097CF8B /* SwiftUIView.swift in Sources */,
+				012ACC28267722510097CF8B /* SoundPlayer.swift in Sources */,
+				012ACC16267721A70097CF8B /* BackgroundImageView.swift in Sources */,
 				01AAA900264CE49100E97629 /* Persistence.swift in Sources */,
 				01AAA8F9264CE49000E97629 /* ContentView.swift in Sources */,
 				01AAA921264CEEBE00E97629 /* Constant.swift in Sources */,
+				012ACC1D267721DB0097CF8B /* BlankView.swift in Sources */,
 				01AAA903264CE49100E97629 /* Devote.xcdatamodeld in Sources */,
+				012ACC24267722210097CF8B /* CheckboxStyle.swift in Sources */,
 				01AAA8F7264CE49000E97629 /* DevoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
